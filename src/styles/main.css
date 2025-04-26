@@ -82,3 +82,119 @@ body {
     object-fit: cover;
   }
   
+  .banner {
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+  }
+  
+  .banner img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+  
+  .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-size: 2.5rem;
+    color: #f0e7cc;
+    background: #5f4a35b2;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .cryptid-section-asia {
+    margin: 2rem 1rem;
+  }
+  
+  .cryptid-container-asia {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  
+  .cryptid-container-asia img {
+    max-width: 300px;
+    border-radius: 8px;
+  }
+  
+  .cryptid-container.left-image-asia img, .cryptid-container.right-image-asia img {
+    width: 40%; 
+    border-radius: 8px;
+    float: left;
+    margin-right: 1.5rem;
+  }
+
+  .cryptid-container.left-image-asia {
+    display: flex;
+    gap: 1.5rem;  
+    align-items: flex-start;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .cryptid-container.right-image-asia {
+    display: flex;
+    gap: 1.5rem; 
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  
+  .cryptid-info {
+    background-color: #f0e7cc;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 55%; 
+    flex: 1;
+    float: left; 
+    margin-right: 1.5rem;
+  }
+
+  .cryptid-info ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+  }
+
+  .cryptid-info li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .cryptid-info strong {
+    font-weight: bold;
+  }
+
+  .cryptid-info p {
+    margin-top: 1rem;
+    clear: both; 
+  }
+
+  .cryptid-name {
+    font-size: 1.8rem;
+    font-family: monospace;
+    margin-top: 2rem;
+  }
+
+  .cryptid-container.right-image-asia img {
+    order: 1;
+  }
+  
+  .cryptid-container.right-image-asia .cryptid-info {
+    order: 0;
+  }
+
+  .cryptid-container::after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+
+  
+  
