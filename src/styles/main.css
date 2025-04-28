@@ -333,4 +333,30 @@ body {
 }
 
   
-  
+/* --- americas --- */
+
+.cryptid-section-americas {
+  margin: 2rem 1rem;
+}
+
+.cryptid-container-americas {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.cryptid-section-americas img {
+  border-radius: 50%;
+  object-fit: cover; 
+  width: 200px; 
+  height: 200px; 
+  margin: 10px;
+}
+
+.cryptid-container.left-image-americas img, .cryptid-container.right-image-americas img {
+  border-radius: 50%; 
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+}
