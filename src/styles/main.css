@@ -110,6 +110,16 @@ body {
     text-align: center;
   }
 
+  .site-footer {
+    background-color: #66695e;
+    color: #e5ddd4;
+    text-align: center;
+    padding: 1rem 0;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+  }
+
   /* --- asia --- */
   
   .cryptid-section-asia {
