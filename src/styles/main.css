@@ -272,6 +272,10 @@ body {
     background-image: url('../assets/ningen.jpg');
   }
 
+  .cryptid-4 {
+    background-image: url('../assets/maneating-tree.jpg');
+  }
+
   .modal {
     display: none; 
     position: fixed; 
@@ -359,4 +363,27 @@ body {
   width: 200px; 
   height: 200px; 
   object-fit: cover; 
+}
+
+  
+.cryptid-container.left-image-asia img, .cryptid-container.right-image-asia img {
+  width: 40%; 
+  border-radius: 8px;
+  float: left;
+  margin-right: 1.5rem;
+}
+
+.cryptid-container.left-image-americas {
+  display: flex;
+  gap: 1.5rem;  
+  align-items: flex-start;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.cryptid-container.right-image-americas {
+  display: flex;
+  gap: 1.5rem; 
+  align-items: flex-start;
+  margin-top: 1rem;
 }
