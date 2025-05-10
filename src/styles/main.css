@@ -120,6 +120,47 @@ body {
     font-size: 0.95rem;
   }
 
+  .cryptid-container {
+    margin: 2rem auto;
+    width: 80%;
+    overflow: auto;
+  }
+  
+  .cryptid-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+  }
+  
+  .cryptid-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .cryptid-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cryptid-container.right-image .cryptid-image {
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+  }
+  
+  .cryptid-info {
+    overflow: hidden;
+  }
+  
+  .cryptid-name {
+    font-size: 2rem;
+    margin: 1rem auto 0;
+    font-family: monospace;
+    text-align: center;
+  }
+  
+
   /* --- asia --- */
   
   .cryptid-section-asia {
