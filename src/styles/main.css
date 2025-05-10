@@ -7,13 +7,53 @@ body {
   }
   
   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     background-color: #66695e;
     padding: 1rem 2rem;
     color: #e5ddd4;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
   }
+
+  .nav-right a {
+    margin-left: 0.75rem;
+    color: #e5ddd4;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+    position: relative;
+  }
+  
+  .nav-right a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1.5px;
+    background-color: #e5ddd4;
+    transition: width 0.25s ease;
+  }
+  
+  .nav-right a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-right a:hover {
+    background-color: #4e5048;
+    color: #ffffff;
+    transform: scale(1.03);
+  }
+
   
   .site-title {
     font-size: 1.5rem;
@@ -34,7 +74,6 @@ body {
   .header {
     position: relative;
     height: 60vh;
-    background-image: url('../assets/headerindex.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -48,6 +87,26 @@ body {
     background-color: #5f4a35b2;
     padding: 1rem 2rem;
     border-radius: 10px;
+  }
+  
+  .header-americas {
+    background-image: url('../assets/americas-banner.jpg');
+  }
+  
+  .header-europe {
+    background-image: url('../assets/europe-banner.jpg');
+  }
+  
+  .header-asia {
+    background-image: url('../assets/asia-banner.jpg');
+  }
+  
+  .header-africa {
+    background-image: url('../assets/africa-banner.jpg');
+  }
+  
+  .header-index {
+    background-image: url('../assets/headerindex.jpg');
   }
   
   .intro {
@@ -71,24 +130,43 @@ body {
     border-radius: 10px;
   }
   
-  .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+
+  .map-navigation {
+    text-align: center;
     padding: 2rem;
   }
   
-  .gallery img {
-    width: 30%;
+  .world-map {
+    width: 100%;
+    max-width:1000px;
+    display: block;
+    margin: 2rem auto;
     border-radius: 10px;
-    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
+  .decorative {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .decorative .centered-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
   .banner {
     position: relative;
     width: 80%;
     margin: 2rem auto;
+    padding-top: 80px; 
   }
+  
   
   .banner img {
     width: 100%;
