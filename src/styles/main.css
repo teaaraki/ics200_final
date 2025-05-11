@@ -88,6 +88,14 @@ body {
     padding: 1rem 2rem;
     border-radius: 10px;
   }
+
+  .image-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
   
   .header-americas {
     background-image: url('../assets/americas-banner.jpg');
@@ -398,7 +406,7 @@ body {
   }
   
   .cryptid-3 {
-    background-image: url('../assets/emela-ntouka.jpg');
+    background-image: url('../assets/Nandi-bear.png');
   }
 
   .cryptid-4 {
@@ -416,6 +424,23 @@ body {
     height: 100%;
     overflow: auto; 
     background-color: rgba(0,0,0,0.7);
+  }
+
+  .modal-inner {
+    position: relative;
+    margin: 5% auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
   
   .modal-content {
@@ -465,6 +490,38 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.map-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  max-width: 200px;
+  border: 2px solid #666;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.map-base {
+  max-width: 800px;
+  width: 100%;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+#africa-h2 {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
   
 /* --- americas --- */
 
