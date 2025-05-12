@@ -5,6 +5,11 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #e5ddd4b2;
   }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
   
   .navbar {
     position: fixed;
@@ -251,6 +256,20 @@ body {
   
   .cryptid-section-asia {
     margin: 2rem 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .cryptid-section-asia,
+.cryptid-container.left-image-asia,
+.cryptid-container.right-image-asia {
+  overflow: visible;
+}
+
+  .cryptid-section-asia p {
+    max-width: 90ch;
+    margin: 0 auto 1rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
   }
   
   .cryptid-container-asia {
@@ -265,19 +284,30 @@ body {
     border-radius: 8px;
   }
   
-  .cryptid-container.left-image-asia img, .cryptid-container.right-image-asia img {
-    width: 40%; 
+  .cryptid-container.left-image-asia img,
+  .cryptid-container.right-image-asia img {
+    width: 40%;
     border-radius: 8px;
-    float: left;
     margin-right: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center center;
+    z-index: 0;
+    position: relative;
   }
+
+.cryptid-container.left-image-asia img:hover,
+.cryptid-container.right-image-asia img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
   .cryptid-container.left-image-asia {
     display: flex;
     gap: 1.5rem;  
     align-items: flex-start;
     margin-top: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
   }
   
   .cryptid-container.right-image-asia {
